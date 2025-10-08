@@ -1,0 +1,58 @@
+# Remove this comment and put your code from
+# Part 2 here...
+#Oluseyi Kataye
+#Prof. Jackson
+#CTEC 450
+#program to have user guess the word in a secret randomized word
+
+#Part 3
+print("-----Guess The Word-----")
+
+#creates string variable for secret word, dashes, and guesses left
+secret_word = "cheese"
+dashes = "------"
+guesses_left = 10
+
+#creates function to get guess from user and returns it as a string
+def get_guess():
+    while True:
+        guess = input("Guess a letter out of this mystery word: ")
+        if len(guess) != 1:
+            print("Your guess must have exactly one character!")
+        elif not guess.islower():
+            print("Your guess must be a lowercase letter!")
+        elif guess.isdigit():
+            print("Your guess must be a lowercase letter!")
+        else:
+            return guess
+            
+#creates function to take 3 arguments, and return the new state of dashes
+def update_dashes(secret_word, dashes, guess):
+    x = ""
+    for i in range(len(secret_word)):
+        if guess == secret_word[i]:
+            x += guess
+        else:
+            x += dashes[i]
+    return x
+
+#call to the function in a while loop for 10 guesses, filling in dashes with correct guesses
+#incorrect guesses give one less guess chance
+while True:
+    guess = get_guess()
+    if guess in secret_word:
+        print("That letter is in the secret word!")
+        dashes = update_dashes(secret_word, dashes, guess)
+    else:
+        print("That letter is not in the secret word!")
+        guesses_left = guesses_left-1
+    print(str(guesses_left)+" incorrect guesses left.")
+    print(dashes)
+    if dashes == secret_word or guesses_left == 0:
+        break
+    
+#declares winner or loser
+if dashes == secret_word:
+    print("Congrats! You win. The word was: " + secret_word)
+else:
+    print("You lose. The word was: " + secret_word)
