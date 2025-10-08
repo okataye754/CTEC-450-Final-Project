@@ -1,0 +1,29 @@
+#Oluseyi Kataye
+#Prof. Jackson
+#CTEC 450
+#program to have user guess the word in a secret randomized word
+
+#Part 1
+print("-----Guess The Word-----")
+#creates string variable for secret word
+secret_word = "cheese"
+
+#creates function to get guess from user and returns it as a string
+def get_guess():
+    while True:
+        guess = input("Guess a letter out of this mystery word: ")
+        if len(guess) != 1:
+            print("Your guess must have exactly one character!")
+        elif not guess.islower():
+            print("Your guess must be a lowercase letter!")
+        elif guess.isdigit():
+            print("Your guess must be a lowercase letter!")
+        else:
+            return guess
+
+#call to the function in a while loop for 10 guesses
+while True:
+    if get_guess() in secret_word:
+        print("That letter is in the secret word!")
+    else:
+        print("That letter is not in the secret word!")
