@@ -7,4 +7,4 @@
 
 -website chatbot implemented using Google Dialogflow
 
--dialog flow implementation- go to Dialogflow; click the "Integrations" tab; scroll down to the "Text based" section and click on Dialogflow Messenger; copy and paste the provided code in your HTML/CSS setup (in mine it was posted in the HTML section) to add the agent to your website.
+-dialog flow implementation- go to Dialogflow; click the "Integrations" tab; scroll down to the "Text based" section and click on Dialogflow Messenger; copy and paste the provided code in your HTML/CSS setup (in mine it was posted in the HTML/.html sections) to add the agent to your website.
