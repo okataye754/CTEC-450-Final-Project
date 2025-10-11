@@ -1,6 +1,7 @@
 layout: page
 title: "About Me"
 permalink: https://okataye754.github.io/CTEC-450-Final-Project/aboutme
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
