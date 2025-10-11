@@ -75,7 +75,7 @@ permalink: /aboutme
   <h4>IT Specialist</h4>
   <div class="topnav">
   <a href="index.html">Home</a>
-  <a class="active" href="aboutme.md">About Me</a>
+  <a class="active" href="aboutme.html">About Me</a>
 </div>
 </div>
 
