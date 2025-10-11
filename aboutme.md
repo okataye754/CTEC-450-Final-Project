@@ -1,3 +1,6 @@
+layout: page
+title: "AboutMe"
+permalink: /aboutme
 <!DOCTYPE html>
 <html lang="en">
 <head>
